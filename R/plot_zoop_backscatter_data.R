@@ -18,6 +18,8 @@ plot_zoop_backscatter_data <- function(){
 require(viridis)
 col <- plasma(n=16)[c(1,6,11,16)]
 
+cur.dir <- dir()
+if (!"graphics" %in% cur.dir) dir.create("graphics")
 
 thezoopdata <- load_zoop_data()
 

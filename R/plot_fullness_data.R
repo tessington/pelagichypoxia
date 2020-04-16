@@ -17,6 +17,8 @@ plot_fullness_data <- function(){
 require(viridis)
 col <- plasma(n=16)[c(1,6,11,16)]
 
+cur.dir <- dir()
+if (!"graphics" %in% cur.dir) dir.create("graphics")
 
 thehakedata <- load_dietdata("Pacific Hake", "fullness")
 theherringdata <- load_dietdata("Pacific Herring", "fullness")

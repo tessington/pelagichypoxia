@@ -16,6 +16,8 @@
 plot_fraction_large_euphausiids <- function(){
 require(viridis)
 col <- plasma(n=16)[c(1,6,11,16)]
+cur.dir <- dir()
+if (!"graphics" %in% cur.dir) dir.create("graphics")
 
 thedata <- load_zoop_data()
 

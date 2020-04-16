@@ -14,6 +14,11 @@
 #'
 plot_pnasc_vs_nasc <- function() {
 thedata <- load_zoop_data()
+
+# check to see if graphics directory exists in current directory
+cur.dir <- dir()
+if (!"graphics" %in% cur.dir) dir.create("graphics")
+
 plotfilename <- "graphics/pnascvsnasc.pdf"
 pdf(file = plotfilename, height = 5, width = 5, useDingbats = F)
 

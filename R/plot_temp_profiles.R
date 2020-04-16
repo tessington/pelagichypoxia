@@ -18,6 +18,8 @@ require(viridis)
 
 # do not use indices (where sensor was bad)
 no.use <- c(1:4, 42)
+cur.dir <- dir()
+if (!"graphics" %in% cur.dir) dir.create("graphics")
 
 plotfilename <- "graphics/tprofiles.pdf"
 pdf(file = plotfilename, height = 8, width = 12)

@@ -24,6 +24,9 @@ pelagichypoxia::ctd_data
 DO <- ctd_data$hc[[16]]
 depth <- ctd_data$hc[[1]]
 Temp <- ctd_data$hc[[2]]
+cur.dir <- dir()
+if (!"graphics" %in% cur.dir) dir.create("graphics")
+
 plotfilename <- "graphics/doprofiles.pdf"
 pdf(file = plotfilename, height = 8, width = 12)
 

@@ -18,6 +18,8 @@ plot_fish_backscatter_data<- function(){
 require(viridis)
 col <- plasma(n=16)[c(1,6,11,16)]
 
+cur.dir <- dir()
+if (!"graphics" %in% cur.dir) dir.create("graphics")
 
 thehakedata <- load_sa_fish_data("Pacific Hake")
 theherringdata <- load_sa_fish_data("Pacific Herring")

@@ -21,6 +21,18 @@ run_all_bayesian_models <- function(species, data.2.use) {
   require(rstan)
   require(loo)
 
+  # see if need to make new subdirectorys, and if so, make them
+  cur.dir <- dir()
+  if (!"outputs" %in% cur.dir) dir.create("outputs")
+
+  cur.dir <- dir("outputs/")
+  if (!"modelselection" %in% cur.dir) dir.create("outputs/modelselection")
+
+  cur.dir <- dir("outputs/modelselection")
+  test.folder.name <- paste(species, data.2.use, sep = "")
+  if (!test.folder.name %in% cur.dir) dir.create(paste("outputs/modelselection/", test.folder.name, sep = ""))
+
+
   outdir <-
     paste("outputs/modelselection/", species, data.2.use, sep = "")
 
