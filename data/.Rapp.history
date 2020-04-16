@@ -1,0 +1,15 @@
+load("/Users/essing/Dropbox/Desktop/Rcode/Hood Canal/ModelAveraging/data/Herr Krill prop available_Mei.Rdata")
+list()
+ls()
+herr.prop.avail
+load("/Users/essing/Dropbox/Desktop/Rcode/Hood Canal/ModelAveraging/data/Hake Krill prop available_Mei.Rdata")
+hake.prop.avail
+load("/Users/essing/Dropbox/Desktop/Rcode/Hood Canal/ModelAveraging/data/Pacific Herring Krill Proportion of Zoop Biomass.Rdata")
+load("/Users/essing/Dropbox/Desktop/Rcode/Hood Canal/ModelAveraging/data/Herr Krill prop available_Mei.Rdata")
+ls()
+herr.prop.avail
+load("/Users/essing/Dropbox/Desktop/Rcode/Hood Canal/ModelAveraging/data/Pacific Herring Krill Proportion of Zoop Biomass.Rdata")
+BioKrill
+load("/Users/essing/Dropbox/Desktop/Rcode/Hood Canal/Archive/Inputs/Pacific Herring Krill Proportion of Zoop Biomass.Rdata")
+BioKrill
+load("/Users/essing/Dropbox/Desktop/Rcode/Hood Canal/SingleVariable/data/Herr Krill prop available_Mei.Rdata")
