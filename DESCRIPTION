@@ -8,14 +8,11 @@ Description: Runs analysis of data described in Moriarty et al.
 Depends: R (>= 3.3.0)
 Imports: rstan,
     sn,
-    shinystan,
     KernSmooth,
     dplyr,
     reshape2,
     lme4,
-    R.matlab,
     loo,
-    readxl,
     viridis
 License: What license is it under?
 Encoding: UTF-8
