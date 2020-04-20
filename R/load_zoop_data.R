@@ -35,7 +35,7 @@ load_zoop_data <- function() {
 
   thedata$se <- 0
 
-  size.data <- read.csv(file  = "Data/plargeEuph.csv", header = T)
+  size.data <- get_euphausiid_lengths()
   thedata$plarge <- size.data$pLarge
 
 

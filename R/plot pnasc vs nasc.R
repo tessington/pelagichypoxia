@@ -27,7 +27,7 @@ with(thedata, plot(x = log(Sa),
                    pch = 21,
                    type = "p",
                    bg = "black",
-                   xlab = "log (NASC)",
+                   xlab = expression(paste("log"["e"],"(NASC)")),
                    ylab = expression("p"["NASC"]),
                   las = 1)
 )
