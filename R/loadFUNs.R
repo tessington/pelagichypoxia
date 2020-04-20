@@ -157,11 +157,10 @@ get.percentile <- function(x, y, value) {
   # get interval approximation
   probs <- y * (x[2] - x[1])
   # get cum probs
-  cumprob <- rep(0, length(probs))
-  cumprob[1] <- probs[1]
-  for (i in 2:length(cumprob)) cumprob[i] <- sum(probs[1:i])
+  cumprob <- cumsum(probs) / sum(probs)
   # find the lower valut_th percentile
   percentile <- approx(x = cumprob, y = x,  xout = value)
   return(percentile$y)
 
 }
+
