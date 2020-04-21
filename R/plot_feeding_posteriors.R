@@ -40,7 +40,7 @@ plot.labels <- c(
   "A. Herring fullness",
   "B. Herring diet fraction",
   "C. Hake fullness",
-  "D. Herring diet fraction"
+  "D. Hake diet fraction"
 )
 
 for (i in 1:length(dir.list)) {
