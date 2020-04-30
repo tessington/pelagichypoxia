@@ -38,7 +38,7 @@ years = c(2012, 2013)
 plotfilename <- "graphics/zoop_by_month.pdf"
 pdf(file = plotfilename, height = 6, width = 12)
 
-par(mfrow = c(1,2), mar = c(3,3,3,1), xpd = NA , oma = c(1,1,1,10))
+par(mfrow = c(1,2), mar = c(3,3.5,3,1), xpd = NA , oma = c(1,1,1,10))
 
 for (j in 1:2) {
 
@@ -69,7 +69,7 @@ axis(side = 2, las = 1, cex.axis = 1.5)
     points(plot.data$Month, plot.data$y, pch = 23, bg = col[i], cex = 2.5)
 
   }
-if (j==1) mtext("log zooplankton NASC", side = 2, line =2.75, las = 0, cex = 1.5)
+if (j==1) mtext(expression(paste("log"["e"],"(zooplankton NASC)")), side = 2, line =2.75, las = 0, cex = 1.5)
 if (j==2) legend(x=5.2, y=6, legend = site.labels, pch = 21, pt.bg = col, pt.cex = 2.5, cex = 1.5)
 }
 dev.off()
